@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "name": "AMD Ryzen 9 7950X",
+        "category": "CPU",
+        "brand": "AMD",
+        "price": 549.99,
+        "originalPrice": 699.99,
+        "rating": 5,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=AMD+Ryzen+9"
+    },
+    {
+        "id": 2,
+        "name": "Intel Core i9-13900K",
+        "category": "CPU",
+        "brand": "Intel",
+        "price": 589.99,
+        "originalPrice": 699.99,
+        "rating": 5,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=Intel+i9"
+    },
+    {
+        "id": 3,
+        "name": "ASUS ROG Strix RTX 4090",
+        "category": "GPU",
+        "brand": "ASUS",
+        "price": 1899.99,
+        "originalPrice": 1999.99,
+        "rating": 5,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=RTX+4090"
+    },
+    {
+        "id": 4,
+        "name": "MSI GeForce RTX 4080",
+        "category": "GPU",
+        "brand": "MSI",
+        "price": 1199.99,
+        "originalPrice": 1399.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=RTX+4080"
+    },
+    {
+        "id": 5,
+        "name": "Gigabyte Radeon RX 7900 XTX",
+        "category": "GPU",
+        "brand": "Gigabyte",
+        "price": 999.99,
+        "originalPrice": 1099.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=RX+7900+XTX"
+    },
+    {
+        "id": 6,
+        "name": "ASUS ROG Maximus Z790 Hero",
+        "category": "Motherboard",
+        "brand": "ASUS",
+        "price": 629.99,
+        "originalPrice": 699.99,
+        "rating": 5,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=Z790+Hero"
+    },
+    {
+        "id": 7,
+        "name": "MSI MAG B650 Tomahawk",
+        "category": "Motherboard",
+        "brand": "MSI",
+        "price": 259.99,
+        "originalPrice": 299.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=B650"
+    },
+    {
+        "id": 8,
+        "name": "Gigabyte X670E Aorus Master",
+        "category": "Motherboard",
+        "brand": "Gigabyte",
+        "price": 499.99,
+        "originalPrice": 549.99,
+        "rating": 5,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=X670E"
+    },
+    {
+        "id": 9,
+        "name": "Corsair Vengeance DDR5 32GB",
+        "category": "RAM",
+        "brand": "Corsair",
+        "price": 159.99,
+        "originalPrice": 199.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=DDR5+32GB"
+    },
+    {
+        "id": 10,
+        "name": "Kingston Fury Beast 64GB",
+        "category": "RAM",
+        "brand": "Kingston",
+        "price": 249.99,
+        "originalPrice": 299.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=64GB+RAM"
+    },
+    {
+        "id": 11,
+        "name": "Samsung 980 Pro 2TB NVMe",
+        "category": "Storage",
+        "brand": "Samsung",
+        "price": 199.99,
+        "originalPrice": 249.99,
+        "rating": 5,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=980+Pro+2TB"
+    },
+    {
+        "id": 12,
+        "name": "Crucial P5 Plus 1TB NVMe",
+        "category": "Storage",
+        "brand": "Crucial",
+        "price": 89.99,
+        "originalPrice": 119.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=P5+Plus"
+    },
+    {
+        "id": 13,
+        "name": "Seagate FireCuda 4TB HDD",
+        "category": "Storage",
+        "brand": "Seagate",
+        "price": 129.99,
+        "originalPrice": 159.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=4TB+HDD"
+    },
+    {
+        "id": 14,
+        "name": "Seasonic Focus GX-1000W",
+        "category": "PSU",
+        "brand": "Seasonic",
+        "price": 179.99,
+        "originalPrice": 219.99,
+        "rating": 5,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=1000W+PSU"
+    },
+    {
+        "id": 15,
+        "name": "Corsair RM850x 850W",
+        "category": "PSU",
+        "brand": "Corsair",
+        "price": 139.99,
+        "originalPrice": 169.99,
+        "rating": 5,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=850W+PSU"
+    },
+    {
+        "id": 16,
+        "name": "NZXT H510 Elite",
+        "category": "Case",
+        "brand": "NZXT",
+        "price": 149.99,
+        "originalPrice": 179.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=H510+Elite"
+    },
+    {
+        "id": 17,
+        "name": "Lian Li O11 Dynamic EVO",
+        "category": "Case",
+        "brand": "Lian Li",
+        "price": 169.99,
+        "originalPrice": 199.99,
+        "rating": 5,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=O11+Dynamic"
+    },
+    {
+        "id": 18,
+        "name": "Phanteks Eclipse P500A",
+        "category": "Case",
+        "brand": "Phanteks",
+        "price": 139.99,
+        "originalPrice": 169.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=P500A"
+    },
+    {
+        "id": 19,
+        "name": "Noctua NH-D15 chromax",
+        "category": "Cooler",
+        "brand": "Noctua",
+        "price": 109.99,
+        "originalPrice": 129.99,
+        "rating": 5,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=NH-D15"
+    },
+    {
+        "id": 20,
+        "name": "Arctic Liquid Freezer II 360",
+        "category": "Cooler",
+        "brand": "Arctic",
+        "price": 119.99,
+        "originalPrice": 149.99,
+        "rating": 5,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=Freezer+360"
+    },
+    {
+        "id": 21,
+        "name": "Cooler Master Hyper 212",
+        "category": "Cooler",
+        "brand": "Cooler Master",
+        "price": 39.99,
+        "originalPrice": 49.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=Hyper+212"
+    },
+    {
+        "id": 22,
+        "name": "ASRock B550 Steel Legend",
+        "category": "Motherboard",
+        "brand": "ASRock",
+        "price": 179.99,
+        "originalPrice": 209.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=B550"
+    },
+    {
+        "id": 23,
+        "name": "XFX Speedster RX 6800 XT",
+        "category": "GPU",
+        "brand": "XFX",
+        "price": 599.99,
+        "originalPrice": 699.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=RX+6800+XT"
+    },
+    {
+        "id": 24,
+        "name": "Crucial Ballistix 32GB DDR4",
+        "category": "RAM",
+        "brand": "Crucial",
+        "price": 89.99,
+        "originalPrice": 119.99,
+        "rating": 4,
+        "image": "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=32GB+DDR4"
+    }
+]

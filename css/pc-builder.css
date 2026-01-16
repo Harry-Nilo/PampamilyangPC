@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-card: #1a1a1a;
+    --bg-hover: #2a2a2a;
+    --border-color: #333;
+    --text-primary: #ffffff;
+    --text-secondary: #999;
+    --accent-pink: #ff3d7f;
+    --accent-pink-hover: #ff5a93;
+    --star-active: #ffd700;
+    --star-inactive: #444;
+}
+
+body.light-mode {
+    --bg-dark: #f5f5f5;
+    --bg-card: #ffffff;
+    --bg-hover: #e8e8e8;
+    --border-color: #ddd;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666;
+    --star-inactive: #ddd;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header {
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem 0 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: auto;
+}
+
+.header .container {
+    max-width: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-pink);
+}
+
+.header-icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.icon-btn:hover {
+    color: var(--accent-pink);
+}
+
+.icon-btn.badge::after {
+    content: attr(data-count);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--accent-pink);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.theme-toggle {
+    position: relative;
+}
+
+.theme-toggle .sun-icon,
+.theme-toggle .moon-icon {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+body.light-mode .theme-toggle .sun-icon {
+    display: block;
+}
+
+body.light-mode .theme-toggle .moon-icon {
+    display: block;
+}
+
+/* PC Builder Styles */
+
+.main-content{
+  height: 100%;
+}
+
+
+.pc-builder-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    height: 1300px;
+}
+
+.pc-builder-table th, .pc-builder-table td {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.pc-builder-table th {
+    background-color: var(--bg-card);
+}
+
+.pc-builder-table .product-qty input {
+    width: 40px;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.pc-builder-table td:last-child {
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pc-builder-table td:last-child {
+  white-space: nowrap;
+}
+
+.add-btn, .edit-btn, .remove-btn {
+    background-color: var(--accent-pink);
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 0.2rem;
+}
+
+.add-btn:disabled, .edit-btn:disabled, .remove-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#add-to-cart-btn {
+  background-color: var(--accent-pink);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;        /* Align icon + text */
+  align-items: center;         /* Vertical centering */
+  transition: background-color 0.3s ease;
+}
+
+#add-to-cart-btn svg {
+  stroke: #fff;                /* Icon color matches text */
+}
+
+#add-to-cart-btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+#add-to-cart-btn:hover:enabled {
+  background-color: var(--accent-pink-hover);
+}
+
+/* Modal */
+.pc-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.pc-modal-content {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.pc-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.modal-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #000;
+}
+
+.product-card:hover {
+    background: #f8f8f8;
+    transform: scale(1.02);
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+    height: 150px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.modal-product-card {
+    background: var(--bg-hover);
+    padding: 0.5rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.modal-product-card img {
+    max-width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+.select-product-btn {
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    background: var(--accent-pink);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Star rating styles */
+.star {
+    color: #444;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.star.filled {
+    color: #ffd700;
+}
+
+.star.half {
+    background: linear-gradient(90deg, #ffd700 50%, #444 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.light-mode .star {
+    color: #ddd;
+}
+
+.pc-builder-subtotal {
+    text-align: left;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+}
+
+/* Extra large screens / desktop 4K+ */
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+/* Large desktops / 1600px – 1919px */
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* Standard desktops / 1440px – 1599px */
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* Desktop / 1280px – 1439px */
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Laptops / 1024px – 1279px */
+@media (max-width: 1024px) {
+  .nav {
+    gap: 1rem;
+  }
+  .header-icons {
+    gap: 0.5rem;
+  }
+  .pc-builder-table th,
+  .pc-builder-table td {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+}
+
+/* Tablets landscape / 992px – 1023px */
+@media (max-width: 992px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+  .product-name img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Tablets portrait / 768px – 991px */
+@media (max-width: 768px) {
+  .pc-builder-table {
+    font-size: 0.8rem;
+  }
+  .product-name img {
+    width: 60px;
+    height: 60px;
+  }
+  .add-btn, .edit-btn, .remove-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Small tablets / 600px – 767px */
+@media (max-width: 600px) {
+  .pc-builder-table th,
+  .pc-builder-table td {
+    padding: 0.3rem;
+  }
+  .product-name img {
+    display: none;
+  }
+  .product-name span {
+    font-size: 0.8rem;
+  }
+}
+
+/* Large mobiles / 480px – 599px */
+@media (max-width: 480px) {
+  .pc-builder-table {
+    display: block;
+    overflow-x: auto;
+  }
+  .pc-builder-subtotal {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Small mobiles / <480px */
+@media (max-width: 360px) {
+  .add-btn, .edit-btn, .remove-btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+  .pc-builder-subtotal {
+    font-size: 0.9rem;
+  }
+}
